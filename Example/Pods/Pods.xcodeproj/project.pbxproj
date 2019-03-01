@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052BD336EB0E1172EA80DBFB2F7D90EA /* MathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5BEFBEAB9A7A53A5CEDD16AA71E97 /* MathKit.swift */; };
+		07863D518C964245F2CCB5E35B3B6F3E /* FlowState-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CC114B76097555233963055301BF57 /* FlowState-dummy.m */; };
+		16F732163C3DF24EBB7B9FD44D482032 /* FlowStepResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepResult.swift */; };
+		193ED44F09C20FC3EDDDE0036C4E8F91 /* Pods-FlowState_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD532200A52359A29755A0760AC2EDB9 /* Pods-FlowState_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2119CEB12C89C96132C9EBFE5DE527CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2596B292272BB951C26FE57435E24BCD /* FlowState-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF2AAAD86FF1E98ACD8621A380B7507 /* FlowState-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D35C0F0F28FCBA9658A15882A7306BA /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1ADC33CBA4CD44EA5281892D46BA7 /* UIView+Constraints.swift */; };
+		3A3155185B00E768194B26DD8680247E /* UIColor+Toolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17435903AC52379FA106AF0828111864 /* UIColor+Toolbox.swift */; };
+		406B9A3F57CA3F8E202B8C6ACD41142F /* UIToolBox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71EC3DBA7946FCD1FC173E4CADA6AECD /* UIToolBox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		445232F8D773D9AC5F3C81C44E95ADF7 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF792B8FD4BAAB6EA89D0B607D299F68 /* UIView+Animation.swift */; };
+		4B8E4347C3BCE794A6691E74904FA2BD /* Pods-FlowState_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B525ADF7D9DEF64DAEE8CA7DE22CC711 /* Pods-FlowState_Tests-dummy.m */; };
+		4CE934CD798D8BB7781D4CC6B825F291 /* UIView+Convience.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD72C1F09E230F1386F50502D8FE2698 /* UIView+Convience.swift */; };
+		4D76CFE65C67E45675A52A32D0B95CFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		504565C8922C2C0A13608211A5E059D4 /* UIButton+Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0A9F6A7886036AF181CDD0CBC6962 /* UIButton+Icon.swift */; };
+		56C3B97F7A3AC06F9C508CDAD17C7D47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5F863BB6C1DB9A6F05ACDF8F0F966DAF /* Pods-FlowState_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1EE00505DE4B5ADB1E71148C7B5AD /* Pods-FlowState_Example-dummy.m */; };
+		7620122C6EB03394095DCD8866702C4C /* UILabel+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76E2E7E2E5A6124531D58D8C15B2E0 /* UILabel+Init.swift */; };
+		797BF8475382F351CDED847CC5ABCBB4 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A08ECC795FCCB67E7B550DF6C1528B /* UIView+Shadow.swift */; };
+		8A6E657F9841D9A1848BC5F6760F8536 /* ConcurrentFlowStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02820711E9771F6E2067FDE547E0AB9B /* ConcurrentFlowStep.swift */; };
+		938098D98DA96797E8FBE8C67BF405FA /* UIStackView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80C5259A0B3B53F13FBD96BB61F5AE6 /* UIStackView+Additions.swift */; };
+		A799383AC38349330BBFF29A526009A7 /* Startable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769301549E0E8675995F35595278C651 /* Startable.swift */; };
+		AC8BA0A3963894D3365A8EA997C5AC1F /* NavigationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC63E37AAE4229395D729629DEA875 /* NavigationFlowCoordinator.swift */; };
+		B36970746027902FBD25827EDC9E1346 /* Pods-FlowState_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F47C6866E18C398349F551AFEE69B765 /* Pods-FlowState_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4C87062D2561FF8C28C720E723A1206 /* UIToolBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA74EBCE34047EB3964E1A4DADD3F22 /* UIToolBox-dummy.m */; };
+		E7F3CD0B42E53271051B17838D0A4F1F /* UIScrollView+Paging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18031044739C4D59ECF42D3D6195B094 /* UIScrollView+Paging.swift */; };
+		EA7D7B5E52811A2CD79625C36170700A /* FlowStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF1498BB9C409B417BD91756A6173A /* FlowStep.swift */; };
+		F4F3E96BE8934AE41AA57682CD797B6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F761BD20A9E94121B01FE106D0AB92AD /* UITableView+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5C36C7D58D148AC7AC96E77E1FAAA /* UITableView+Header.swift */; };
+		F908D36804D8B510D19EE77A76D84B53 /* Array+Subdivide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E12F0963D006F8F56F1E606453E8D /* Array+Subdivide.swift */; };
+		FDB2E0EFA59FFE0BEA3C85D1441B7D81 /* UIBezier+Smoothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3382F6807CFA14D9869CE4A06A1EA4 /* UIBezier+Smoothing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B9961F72FB31D7A76E898058C67D380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992D2144E81F2EB2CF200E0C1240894B;
+			remoteInfo = UIToolBox;
+		};
+		26616F36ABB4498D37D8351E3F32EA35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F88D8EB7BB8003FBF74D4E13D689A23;
+			remoteInfo = FlowState;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02820711E9771F6E2067FDE547E0AB9B /* ConcurrentFlowStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConcurrentFlowStep.swift; path = FlowState/Classes/ConcurrentFlowStep.swift; sourceTree = "<group>"; };
+		10CC114B76097555233963055301BF57 /* FlowState-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlowState-dummy.m"; sourceTree = "<group>"; };
+		1325604E66B46FEB7E9E37403C89ED42 /* UIToolBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UIToolBox.modulemap; sourceTree = "<group>"; };
+		1556240B9196EF11425E885DA5285E8F /* Pods_FlowState_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlowState_Tests.framework; path = "Pods-FlowState_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17435903AC52379FA106AF0828111864 /* UIColor+Toolbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Toolbox.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIColor+Toolbox.swift"; sourceTree = "<group>"; };
+		18031044739C4D59ECF42D3D6195B094 /* UIScrollView+Paging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Paging.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIScrollView+Paging.swift"; sourceTree = "<group>"; };
+		1F7321362E8F9D8D6190AF0CD3087C72 /* Pods-FlowState_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlowState_Example.modulemap"; sourceTree = "<group>"; };
+		2AD908F9F1C0F45F0B87029D35E8AF13 /* Pods-FlowState_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowState_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2EA1ADC33CBA4CD44EA5281892D46BA7 /* UIView+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Constraints.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIView+Constraints.swift"; sourceTree = "<group>"; };
+		34F844ED5DD2DFE6DCE887C21B27649E /* Pods_FlowState_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlowState_Example.framework; path = "Pods-FlowState_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		427CE3A0C8C6D1846703598196114D4C /* UIToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIToolBox.framework; path = UIToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF2AAAD86FF1E98ACD8621A380B7507 /* FlowState-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowState-umbrella.h"; sourceTree = "<group>"; };
+		5EFF4004EB3EEA441CB42EE63CA8A9C0 /* UIToolBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIToolBox-prefix.pch"; sourceTree = "<group>"; };
+		5F76E2E7E2E5A6124531D58D8C15B2E0 /* UILabel+Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Init.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UILabel+Init.swift"; sourceTree = "<group>"; };
+		6149E047342D3BE77E36C8E79B8119C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64AADE5BDA2304A3E7E4A13F8BE69D0F /* Pods-FlowState_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlowState_Example-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6BA74EBCE34047EB3964E1A4DADD3F22 /* UIToolBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIToolBox-dummy.m"; sourceTree = "<group>"; };
+		6DDBC3AB5633BFCC6863A209BB0E2ED0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FCF1498BB9C409B417BD91756A6173A /* FlowStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowStep.swift; path = FlowState/Classes/FlowStep.swift; sourceTree = "<group>"; };
+		71EC3DBA7946FCD1FC173E4CADA6AECD /* UIToolBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIToolBox-umbrella.h"; sourceTree = "<group>"; };
+		769301549E0E8675995F35595278C651 /* Startable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Startable.swift; path = FlowState/Classes/Startable.swift; sourceTree = "<group>"; };
+		771CE2801BFC894CE4D59424D61E661B /* Pods-FlowState_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlowState_Example-frameworks.sh"; sourceTree = "<group>"; };
+		778DA676268C69A8F428EDF6DB19A308 /* Pods-FlowState_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowState_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7DCB06FDC65BE885E169A05825FE0D59 /* FlowState.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlowState.modulemap; sourceTree = "<group>"; };
+		821BE92C56710B380E4A1B8323ED7067 /* Pods-FlowState_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowState_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		89EA4A75E7C4EBA9D79EBB28E767E04F /* Pods-FlowState_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowState_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8AD1EE00505DE4B5ADB1E71148C7B5AD /* Pods-FlowState_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowState_Example-dummy.m"; sourceTree = "<group>"; };
+		8C163658F1AC81692A43D260C32367DC /* Pods-FlowState_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlowState_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A4921BA22B7F918A18713F361B9FC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A8005C6835D045F6904402FDE268F347 /* UIToolBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIToolBox.xcconfig; sourceTree = "<group>"; };
+		AA06A4CC7EBA06E4679BB642EDD09C5A /* FlowState.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlowState.xcconfig; sourceTree = "<group>"; };
+		AC3382F6807CFA14D9869CE4A06A1EA4 /* UIBezier+Smoothing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBezier+Smoothing.swift"; path = "UIToolBox/Classes/Extensions/Foundation/UIBezier+Smoothing.swift"; sourceTree = "<group>"; };
+		AD0E12F0963D006F8F56F1E606453E8D /* Array+Subdivide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Subdivide.swift"; path = "UIToolBox/Classes/Extensions/Foundation/Array+Subdivide.swift"; sourceTree = "<group>"; };
+		AD72C1F09E230F1386F50502D8FE2698 /* UIView+Convience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Convience.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIView+Convience.swift"; sourceTree = "<group>"; };
+		AF29DD417B80FE18D1D045B7A2F97F68 /* Pods-FlowState_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlowState_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B26EBBBF72B355568CFD0BF7730FE0B7 /* FlowState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlowState.framework; path = FlowState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49B4664605DBA1232977AC74D1559C3 /* Pods-FlowState_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowState_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B525ADF7D9DEF64DAEE8CA7DE22CC711 /* Pods-FlowState_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowState_Tests-dummy.m"; sourceTree = "<group>"; };
+		B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowStepResult.swift; path = FlowState/Classes/FlowStepResult.swift; sourceTree = "<group>"; };
+		BDA5C36C7D58D148AC7AC96E77E1FAAA /* UITableView+Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Header.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UITableView+Header.swift"; sourceTree = "<group>"; };
+		C2F5D6CB34410CA2C45DE89AE71472F1 /* FlowState-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowState-prefix.pch"; sourceTree = "<group>"; };
+		C5A08ECC795FCCB67E7B550DF6C1528B /* UIView+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Shadow.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIView+Shadow.swift"; sourceTree = "<group>"; };
+		C5F5BEFBEAB9A7A53A5CEDD16AA71E97 /* MathKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MathKit.swift; path = UIToolBox/Classes/Extensions/Foundation/MathKit.swift; sourceTree = "<group>"; };
+		C8ADD301BB6A736780DD0F554DFAAE0A /* FlowState.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FlowState.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB69C5C878A782B992B45A562BE43E7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F3DA493A4AB1D501C1FE7BCBDEEB3B /* Pods-FlowState_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlowState_Tests.modulemap"; sourceTree = "<group>"; };
+		D7DC63E37AAE4229395D729629DEA875 /* NavigationFlowCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationFlowCoordinator.swift; path = FlowState/Classes/NavigationFlowCoordinator.swift; sourceTree = "<group>"; };
+		DAE0A9F6A7886036AF181CDD0CBC6962 /* UIButton+Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Icon.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIButton+Icon.swift"; sourceTree = "<group>"; };
+		E305549798176E8708102A7F8F377968 /* Pods-FlowState_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowState_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4D0DC0FAD56E4D716A4A5BED1ABA775 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80C5259A0B3B53F13FBD96BB61F5AE6 /* UIStackView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+Additions.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIStackView+Additions.swift"; sourceTree = "<group>"; };
+		EE8568F2D1C69DA0ABCF15AF44574F11 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EFF33B808AE870C5AFF6D9B58B9ECA7E /* Pods-FlowState_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlowState_Tests-resources.sh"; sourceTree = "<group>"; };
+		F47C6866E18C398349F551AFEE69B765 /* Pods-FlowState_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowState_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FD532200A52359A29755A0760AC2EDB9 /* Pods-FlowState_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowState_Example-umbrella.h"; sourceTree = "<group>"; };
+		FF37C473CFB6FACAFB21BFC79EA56682 /* Pods-FlowState_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlowState_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		FF792B8FD4BAAB6EA89D0B607D299F68 /* UIView+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animation.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIView+Animation.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		018C1B8AFD33629B94AA35C89571A015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F3E96BE8934AE41AA57682CD797B6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		159E7D7FF6CB7D395891093E201C720C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2119CEB12C89C96132C9EBFE5DE527CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		669C8C7695347091F150DD21839DCE68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C3B97F7A3AC06F9C508CDAD17C7D47 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD9E1AA706F8D321271C57074FAF03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D76CFE65C67E45675A52A32D0B95CFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F8A6E63F2E30F17F43EF82DA2F82C7A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D704F9B1098BB9FD24F8FD2BBAB2456 /* FlowState */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3CA3583B3DDC660DE89072378F10A354 /* UIToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				AD0E12F0963D006F8F56F1E606453E8D /* Array+Subdivide.swift */,
+				C5F5BEFBEAB9A7A53A5CEDD16AA71E97 /* MathKit.swift */,
+				AC3382F6807CFA14D9869CE4A06A1EA4 /* UIBezier+Smoothing.swift */,
+				DAE0A9F6A7886036AF181CDD0CBC6962 /* UIButton+Icon.swift */,
+				17435903AC52379FA106AF0828111864 /* UIColor+Toolbox.swift */,
+				5F76E2E7E2E5A6124531D58D8C15B2E0 /* UILabel+Init.swift */,
+				18031044739C4D59ECF42D3D6195B094 /* UIScrollView+Paging.swift */,
+				E80C5259A0B3B53F13FBD96BB61F5AE6 /* UIStackView+Additions.swift */,
+				BDA5C36C7D58D148AC7AC96E77E1FAAA /* UITableView+Header.swift */,
+				FF792B8FD4BAAB6EA89D0B607D299F68 /* UIView+Animation.swift */,
+				2EA1ADC33CBA4CD44EA5281892D46BA7 /* UIView+Constraints.swift */,
+				AD72C1F09E230F1386F50502D8FE2698 /* UIView+Convience.swift */,
+				C5A08ECC795FCCB67E7B550DF6C1528B /* UIView+Shadow.swift */,
+				66F7B20820A01C70BC434FC5F8C9CCDB /* Support Files */,
+			);
+			name = UIToolBox;
+			path = UIToolBox;
+			sourceTree = "<group>";
+		};
+		3DBDF814588E1BA339220B5F35FBFD01 /* Pods-FlowState_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6DDBC3AB5633BFCC6863A209BB0E2ED0 /* Info.plist */,
+				D5F3DA493A4AB1D501C1FE7BCBDEEB3B /* Pods-FlowState_Tests.modulemap */,
+				8C163658F1AC81692A43D260C32367DC /* Pods-FlowState_Tests-acknowledgements.markdown */,
+				778DA676268C69A8F428EDF6DB19A308 /* Pods-FlowState_Tests-acknowledgements.plist */,
+				B525ADF7D9DEF64DAEE8CA7DE22CC711 /* Pods-FlowState_Tests-dummy.m */,
+				FF37C473CFB6FACAFB21BFC79EA56682 /* Pods-FlowState_Tests-frameworks.sh */,
+				EFF33B808AE870C5AFF6D9B58B9ECA7E /* Pods-FlowState_Tests-resources.sh */,
+				F47C6866E18C398349F551AFEE69B765 /* Pods-FlowState_Tests-umbrella.h */,
+				821BE92C56710B380E4A1B8323ED7067 /* Pods-FlowState_Tests.debug.xcconfig */,
+				2AD908F9F1C0F45F0B87029D35E8AF13 /* Pods-FlowState_Tests.release.xcconfig */,
+			);
+			name = "Pods-FlowState_Tests";
+			path = "Target Support Files/Pods-FlowState_Tests";
+			sourceTree = "<group>";
+		};
+		431E57CCB6E4D2084E421BAB579B3D58 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C8ADD301BB6A736780DD0F554DFAAE0A /* FlowState.podspec */,
+				95A4921BA22B7F918A18713F361B9FC2 /* LICENSE */,
+				EE8568F2D1C69DA0ABCF15AF44574F11 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		48E6D55C8A501D03071C43F0F9FD6361 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D314B724782989826E8E39D8FA0C0FEC /* Pods-FlowState_Example */,
+				3DBDF814588E1BA339220B5F35FBFD01 /* Pods-FlowState_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5D704F9B1098BB9FD24F8FD2BBAB2456 /* FlowState */ = {
+			isa = PBXGroup;
+			children = (
+				02820711E9771F6E2067FDE547E0AB9B /* ConcurrentFlowStep.swift */,
+				6FCF1498BB9C409B417BD91756A6173A /* FlowStep.swift */,
+				B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepResult.swift */,
+				D7DC63E37AAE4229395D729629DEA875 /* NavigationFlowCoordinator.swift */,
+				769301549E0E8675995F35595278C651 /* Startable.swift */,
+				431E57CCB6E4D2084E421BAB579B3D58 /* Pod */,
+				FA248B37994A07810EA3908AE95ACFA6 /* Support Files */,
+			);
+			name = FlowState;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		66F7B20820A01C70BC434FC5F8C9CCDB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4D0DC0FAD56E4D716A4A5BED1ABA775 /* Info.plist */,
+				1325604E66B46FEB7E9E37403C89ED42 /* UIToolBox.modulemap */,
+				A8005C6835D045F6904402FDE268F347 /* UIToolBox.xcconfig */,
+				6BA74EBCE34047EB3964E1A4DADD3F22 /* UIToolBox-dummy.m */,
+				5EFF4004EB3EEA441CB42EE63CA8A9C0 /* UIToolBox-prefix.pch */,
+				71EC3DBA7946FCD1FC173E4CADA6AECD /* UIToolBox-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIToolBox";
+			sourceTree = "<group>";
+		};
+		76B63D608B129EE48E3D64FFA21C244F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CA3583B3DDC660DE89072378F10A354 /* UIToolBox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				2F8A6E63F2E30F17F43EF82DA2F82C7A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				76B63D608B129EE48E3D64FFA21C244F /* Pods */,
+				E931A296504C063F2DAA21E7A1F5E949 /* Products */,
+				48E6D55C8A501D03071C43F0F9FD6361 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D314B724782989826E8E39D8FA0C0FEC /* Pods-FlowState_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6149E047342D3BE77E36C8E79B8119C6 /* Info.plist */,
+				1F7321362E8F9D8D6190AF0CD3087C72 /* Pods-FlowState_Example.modulemap */,
+				AF29DD417B80FE18D1D045B7A2F97F68 /* Pods-FlowState_Example-acknowledgements.markdown */,
+				E305549798176E8708102A7F8F377968 /* Pods-FlowState_Example-acknowledgements.plist */,
+				8AD1EE00505DE4B5ADB1E71148C7B5AD /* Pods-FlowState_Example-dummy.m */,
+				771CE2801BFC894CE4D59424D61E661B /* Pods-FlowState_Example-frameworks.sh */,
+				64AADE5BDA2304A3E7E4A13F8BE69D0F /* Pods-FlowState_Example-resources.sh */,
+				FD532200A52359A29755A0760AC2EDB9 /* Pods-FlowState_Example-umbrella.h */,
+				B49B4664605DBA1232977AC74D1559C3 /* Pods-FlowState_Example.debug.xcconfig */,
+				89EA4A75E7C4EBA9D79EBB28E767E04F /* Pods-FlowState_Example.release.xcconfig */,
+			);
+			name = "Pods-FlowState_Example";
+			path = "Target Support Files/Pods-FlowState_Example";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E931A296504C063F2DAA21E7A1F5E949 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B26EBBBF72B355568CFD0BF7730FE0B7 /* FlowState.framework */,
+				34F844ED5DD2DFE6DCE887C21B27649E /* Pods_FlowState_Example.framework */,
+				1556240B9196EF11425E885DA5285E8F /* Pods_FlowState_Tests.framework */,
+				427CE3A0C8C6D1846703598196114D4C /* UIToolBox.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA248B37994A07810EA3908AE95ACFA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DCB06FDC65BE885E169A05825FE0D59 /* FlowState.modulemap */,
+				AA06A4CC7EBA06E4679BB642EDD09C5A /* FlowState.xcconfig */,
+				10CC114B76097555233963055301BF57 /* FlowState-dummy.m */,
+				C2F5D6CB34410CA2C45DE89AE71472F1 /* FlowState-prefix.pch */,
+				5BF2AAAD86FF1E98ACD8621A380B7507 /* FlowState-umbrella.h */,
+				CB69C5C878A782B992B45A562BE43E7A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FlowState";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6DF105A08996622D4516B6D7DC6B0BF8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				193ED44F09C20FC3EDDDE0036C4E8F91 /* Pods-FlowState_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C346D4433B68B4F375533F6AC3F49DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2596B292272BB951C26FE57435E24BCD /* FlowState-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78AE7B7F3E0BBCC138D8DEB1544F47F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36970746027902FBD25827EDC9E1346 /* Pods-FlowState_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1266E9E4DD081C9C81BA13415A1D05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406B9A3F57CA3F8E202B8C6ACD41142F /* UIToolBox-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F88D8EB7BB8003FBF74D4E13D689A23 /* FlowState */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDE5FBF8E76C48A5CA20423BD36B215 /* Build configuration list for PBXNativeTarget "FlowState" */;
+			buildPhases = (
+				632FEF4FFA831C178B080F59F33071B7 /* Sources */,
+				159E7D7FF6CB7D395891093E201C720C /* Frameworks */,
+				9C346D4433B68B4F375533F6AC3F49DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowState;
+			productName = FlowState;
+			productReference = B26EBBBF72B355568CFD0BF7730FE0B7 /* FlowState.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50B47910C4AE42718C43C563AE2812DA /* Pods-FlowState_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E104DA67989C3EF57A98D60A0DE2ECE /* Build configuration list for PBXNativeTarget "Pods-FlowState_Example" */;
+			buildPhases = (
+				6501D223563A940F28624F0ECCB2FB45 /* Sources */,
+				DCD9E1AA706F8D321271C57074FAF03F /* Frameworks */,
+				6DF105A08996622D4516B6D7DC6B0BF8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B515CBC67790EBE15A4C4E276E529C2 /* PBXTargetDependency */,
+				CF71419CC3FA497139535C7638652F7B /* PBXTargetDependency */,
+			);
+			name = "Pods-FlowState_Example";
+			productName = "Pods-FlowState_Example";
+			productReference = 34F844ED5DD2DFE6DCE887C21B27649E /* Pods_FlowState_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		59C06B599F3375B7E8399895CEFD681D /* Pods-FlowState_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9F301AEEFE438A1720CB075504C728 /* Build configuration list for PBXNativeTarget "Pods-FlowState_Tests" */;
+			buildPhases = (
+				B363EFE6CCC8A73DE725AB1F18568DF6 /* Sources */,
+				018C1B8AFD33629B94AA35C89571A015 /* Frameworks */,
+				B78AE7B7F3E0BBCC138D8DEB1544F47F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FlowState_Tests";
+			productName = "Pods-FlowState_Tests";
+			productReference = 1556240B9196EF11425E885DA5285E8F /* Pods_FlowState_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		992D2144E81F2EB2CF200E0C1240894B /* UIToolBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C762CF8C0AC70E54D6298EBB91268435 /* Build configuration list for PBXNativeTarget "UIToolBox" */;
+			buildPhases = (
+				AD71B33710A6BC4F0FF64ED0A87C5CF6 /* Sources */,
+				669C8C7695347091F150DD21839DCE68 /* Frameworks */,
+				CE1266E9E4DD081C9C81BA13415A1D05 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIToolBox;
+			productName = UIToolBox;
+			productReference = 427CE3A0C8C6D1846703598196114D4C /* UIToolBox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E931A296504C063F2DAA21E7A1F5E949 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F88D8EB7BB8003FBF74D4E13D689A23 /* FlowState */,
+				50B47910C4AE42718C43C563AE2812DA /* Pods-FlowState_Example */,
+				59C06B599F3375B7E8399895CEFD681D /* Pods-FlowState_Tests */,
+				992D2144E81F2EB2CF200E0C1240894B /* UIToolBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		632FEF4FFA831C178B080F59F33071B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A6E657F9841D9A1848BC5F6760F8536 /* ConcurrentFlowStep.swift in Sources */,
+				07863D518C964245F2CCB5E35B3B6F3E /* FlowState-dummy.m in Sources */,
+				EA7D7B5E52811A2CD79625C36170700A /* FlowStep.swift in Sources */,
+				16F732163C3DF24EBB7B9FD44D482032 /* FlowStepResult.swift in Sources */,
+				AC8BA0A3963894D3365A8EA997C5AC1F /* NavigationFlowCoordinator.swift in Sources */,
+				A799383AC38349330BBFF29A526009A7 /* Startable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6501D223563A940F28624F0ECCB2FB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F863BB6C1DB9A6F05ACDF8F0F966DAF /* Pods-FlowState_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD71B33710A6BC4F0FF64ED0A87C5CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F908D36804D8B510D19EE77A76D84B53 /* Array+Subdivide.swift in Sources */,
+				052BD336EB0E1172EA80DBFB2F7D90EA /* MathKit.swift in Sources */,
+				FDB2E0EFA59FFE0BEA3C85D1441B7D81 /* UIBezier+Smoothing.swift in Sources */,
+				504565C8922C2C0A13608211A5E059D4 /* UIButton+Icon.swift in Sources */,
+				3A3155185B00E768194B26DD8680247E /* UIColor+Toolbox.swift in Sources */,
+				7620122C6EB03394095DCD8866702C4C /* UILabel+Init.swift in Sources */,
+				E7F3CD0B42E53271051B17838D0A4F1F /* UIScrollView+Paging.swift in Sources */,
+				938098D98DA96797E8FBE8C67BF405FA /* UIStackView+Additions.swift in Sources */,
+				F761BD20A9E94121B01FE106D0AB92AD /* UITableView+Header.swift in Sources */,
+				D4C87062D2561FF8C28C720E723A1206 /* UIToolBox-dummy.m in Sources */,
+				445232F8D773D9AC5F3C81C44E95ADF7 /* UIView+Animation.swift in Sources */,
+				2D35C0F0F28FCBA9658A15882A7306BA /* UIView+Constraints.swift in Sources */,
+				4CE934CD798D8BB7781D4CC6B825F291 /* UIView+Convience.swift in Sources */,
+				797BF8475382F351CDED847CC5ABCBB4 /* UIView+Shadow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B363EFE6CCC8A73DE725AB1F18568DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8E4347C3BCE794A6691E74904FA2BD /* Pods-FlowState_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B515CBC67790EBE15A4C4E276E529C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlowState;
+			target = 1F88D8EB7BB8003FBF74D4E13D689A23 /* FlowState */;
+			targetProxy = 26616F36ABB4498D37D8351E3F32EA35 /* PBXContainerItemProxy */;
+		};
+		CF71419CC3FA497139535C7638652F7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIToolBox;
+			target = 992D2144E81F2EB2CF200E0C1240894B /* UIToolBox */;
+			targetProxy = 0B9961F72FB31D7A76E898058C67D380 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13A95306D85E4471AB6BE665B012E60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1C088998E3A16B8F3E0C34E43E6EAC2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821BE92C56710B380E4A1B8323ED7067 /* Pods-FlowState_Tests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowState_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowState_Tests/Pods-FlowState_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlowState_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3AED7F73C040700EAEFD577D9BEE3E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8005C6835D045F6904402FDE268F347 /* UIToolBox.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIToolBox/UIToolBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIToolBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIToolBox/UIToolBox.modulemap";
+				PRODUCT_NAME = UIToolBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C46262D97E06812DF697332A29F074D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8005C6835D045F6904402FDE268F347 /* UIToolBox.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIToolBox/UIToolBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIToolBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIToolBox/UIToolBox.modulemap";
+				PRODUCT_NAME = UIToolBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6CB43DAEC91BCF03B1A38886F3F7B49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD908F9F1C0F45F0B87029D35E8AF13 /* Pods-FlowState_Tests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowState_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowState_Tests/Pods-FlowState_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlowState_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86D8C8E023F7C3E69C687B7CB3321DEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89EA4A75E7C4EBA9D79EBB28E767E04F /* Pods-FlowState_Example.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowState_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowState_Example/Pods-FlowState_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlowState_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E8333274F4AB64785B04AB5B2A37231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AD3189FFE096FC97B06A7D96240E835E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA06A4CC7EBA06E4679BB642EDD09C5A /* FlowState.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlowState/FlowState-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlowState/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlowState/FlowState.modulemap";
+				PRODUCT_NAME = FlowState;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8728CBF949D667FFC5B8BA8856D4F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA06A4CC7EBA06E4679BB642EDD09C5A /* FlowState.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlowState/FlowState-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlowState/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlowState/FlowState.modulemap";
+				PRODUCT_NAME = FlowState;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB4F6A5F4BC56F41459A057DBB0A186A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B49B4664605DBA1232977AC74D1559C3 /* Pods-FlowState_Example.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowState_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowState_Example/Pods-FlowState_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlowState_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A95306D85E4471AB6BE665B012E60A /* Debug */,
+				8E8333274F4AB64785B04AB5B2A37231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDE5FBF8E76C48A5CA20423BD36B215 /* Build configuration list for PBXNativeTarget "FlowState" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8728CBF949D667FFC5B8BA8856D4F2F /* Debug */,
+				AD3189FFE096FC97B06A7D96240E835E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E104DA67989C3EF57A98D60A0DE2ECE /* Build configuration list for PBXNativeTarget "Pods-FlowState_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4F6A5F4BC56F41459A057DBB0A186A /* Debug */,
+				86D8C8E023F7C3E69C687B7CB3321DEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C762CF8C0AC70E54D6298EBB91268435 /* Build configuration list for PBXNativeTarget "UIToolBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C46262D97E06812DF697332A29F074D /* Debug */,
+				3AED7F73C040700EAEFD577D9BEE3E09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9F301AEEFE438A1720CB075504C728 /* Build configuration list for PBXNativeTarget "Pods-FlowState_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C088998E3A16B8F3E0C34E43E6EAC2E /* Debug */,
+				6CB43DAEC91BCF03B1A38886F3F7B49D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

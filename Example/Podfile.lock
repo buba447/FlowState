@@ -1,0 +1,19 @@
+PODS:
+  - FlowState (1.0.0)
+  - UIToolBox (1.0.3)
+
+DEPENDENCIES:
+  - FlowState (from `../`)
+  - UIToolBox
+
+EXTERNAL SOURCES:
+  FlowState:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FlowState: 0242cae13bb7f7904d56ac09988558e9c9736bfd
+  UIToolBox: a7972ce1272e7d54493ba008f1c18b68a7d14e9c
+
+PODFILE CHECKSUM: 51f6eeee24c8ea0bf5831f65be2abec4505b6b5d
+
+COCOAPODS: 1.4.0
