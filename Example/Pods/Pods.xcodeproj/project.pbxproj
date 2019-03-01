@@ -60,14 +60,14 @@
 		02820711E9771F6E2067FDE547E0AB9B /* ConcurrentFlowStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConcurrentFlowStep.swift; path = FlowState/Classes/ConcurrentFlowStep.swift; sourceTree = "<group>"; };
 		10CC114B76097555233963055301BF57 /* FlowState-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlowState-dummy.m"; sourceTree = "<group>"; };
 		1325604E66B46FEB7E9E37403C89ED42 /* UIToolBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UIToolBox.modulemap; sourceTree = "<group>"; };
-		1556240B9196EF11425E885DA5285E8F /* Pods_FlowState_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlowState_Tests.framework; path = "Pods-FlowState_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1556240B9196EF11425E885DA5285E8F /* Pods_FlowState_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowState_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17435903AC52379FA106AF0828111864 /* UIColor+Toolbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Toolbox.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIColor+Toolbox.swift"; sourceTree = "<group>"; };
 		18031044739C4D59ECF42D3D6195B094 /* UIScrollView+Paging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Paging.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIScrollView+Paging.swift"; sourceTree = "<group>"; };
 		1F7321362E8F9D8D6190AF0CD3087C72 /* Pods-FlowState_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlowState_Example.modulemap"; sourceTree = "<group>"; };
 		2AD908F9F1C0F45F0B87029D35E8AF13 /* Pods-FlowState_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowState_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2EA1ADC33CBA4CD44EA5281892D46BA7 /* UIView+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Constraints.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIView+Constraints.swift"; sourceTree = "<group>"; };
-		34F844ED5DD2DFE6DCE887C21B27649E /* Pods_FlowState_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlowState_Example.framework; path = "Pods-FlowState_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		427CE3A0C8C6D1846703598196114D4C /* UIToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIToolBox.framework; path = UIToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34F844ED5DD2DFE6DCE887C21B27649E /* Pods_FlowState_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowState_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		427CE3A0C8C6D1846703598196114D4C /* UIToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF2AAAD86FF1E98ACD8621A380B7507 /* FlowState-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowState-umbrella.h"; sourceTree = "<group>"; };
 		5EFF4004EB3EEA441CB42EE63CA8A9C0 /* UIToolBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIToolBox-prefix.pch"; sourceTree = "<group>"; };
 		5F76E2E7E2E5A6124531D58D8C15B2E0 /* UILabel+Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Init.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UILabel+Init.swift"; sourceTree = "<group>"; };
@@ -86,15 +86,15 @@
 		89EA4A75E7C4EBA9D79EBB28E767E04F /* Pods-FlowState_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowState_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8AD1EE00505DE4B5ADB1E71148C7B5AD /* Pods-FlowState_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowState_Example-dummy.m"; sourceTree = "<group>"; };
 		8C163658F1AC81692A43D260C32367DC /* Pods-FlowState_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlowState_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95A4921BA22B7F918A18713F361B9FC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A4921BA22B7F918A18713F361B9FC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A8005C6835D045F6904402FDE268F347 /* UIToolBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIToolBox.xcconfig; sourceTree = "<group>"; };
 		AA06A4CC7EBA06E4679BB642EDD09C5A /* FlowState.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlowState.xcconfig; sourceTree = "<group>"; };
 		AC3382F6807CFA14D9869CE4A06A1EA4 /* UIBezier+Smoothing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBezier+Smoothing.swift"; path = "UIToolBox/Classes/Extensions/Foundation/UIBezier+Smoothing.swift"; sourceTree = "<group>"; };
 		AD0E12F0963D006F8F56F1E606453E8D /* Array+Subdivide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Subdivide.swift"; path = "UIToolBox/Classes/Extensions/Foundation/Array+Subdivide.swift"; sourceTree = "<group>"; };
 		AD72C1F09E230F1386F50502D8FE2698 /* UIView+Convience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Convience.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIView+Convience.swift"; sourceTree = "<group>"; };
 		AF29DD417B80FE18D1D045B7A2F97F68 /* Pods-FlowState_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlowState_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B26EBBBF72B355568CFD0BF7730FE0B7 /* FlowState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlowState.framework; path = FlowState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26EBBBF72B355568CFD0BF7730FE0B7 /* FlowState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlowState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49B4664605DBA1232977AC74D1559C3 /* Pods-FlowState_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowState_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B525ADF7D9DEF64DAEE8CA7DE22CC711 /* Pods-FlowState_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowState_Tests-dummy.m"; sourceTree = "<group>"; };
 		B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowStepResult.swift; path = FlowState/Classes/FlowStepResult.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		C2F5D6CB34410CA2C45DE89AE71472F1 /* FlowState-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowState-prefix.pch"; sourceTree = "<group>"; };
 		C5A08ECC795FCCB67E7B550DF6C1528B /* UIView+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Shadow.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIView+Shadow.swift"; sourceTree = "<group>"; };
 		C5F5BEFBEAB9A7A53A5CEDD16AA71E97 /* MathKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MathKit.swift; path = UIToolBox/Classes/Extensions/Foundation/MathKit.swift; sourceTree = "<group>"; };
-		C8ADD301BB6A736780DD0F554DFAAE0A /* FlowState.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FlowState.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C8ADD301BB6A736780DD0F554DFAAE0A /* FlowState.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FlowState.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CB69C5C878A782B992B45A562BE43E7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5F3DA493A4AB1D501C1FE7BCBDEEB3B /* Pods-FlowState_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlowState_Tests.modulemap"; sourceTree = "<group>"; };
 		D7DC63E37AAE4229395D729629DEA875 /* NavigationFlowCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationFlowCoordinator.swift; path = FlowState/Classes/NavigationFlowCoordinator.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		E305549798176E8708102A7F8F377968 /* Pods-FlowState_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowState_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		E4D0DC0FAD56E4D716A4A5BED1ABA775 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E80C5259A0B3B53F13FBD96BB61F5AE6 /* UIStackView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+Additions.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIStackView+Additions.swift"; sourceTree = "<group>"; };
-		EE8568F2D1C69DA0ABCF15AF44574F11 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EE8568F2D1C69DA0ABCF15AF44574F11 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EFF33B808AE870C5AFF6D9B58B9ECA7E /* Pods-FlowState_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlowState_Tests-resources.sh"; sourceTree = "<group>"; };
 		F47C6866E18C398349F551AFEE69B765 /* Pods-FlowState_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowState_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FD532200A52359A29755A0760AC2EDB9 /* Pods-FlowState_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowState_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -180,7 +180,6 @@
 				C5A08ECC795FCCB67E7B550DF6C1528B /* UIView+Shadow.swift */,
 				66F7B20820A01C70BC434FC5F8C9CCDB /* Support Files */,
 			);
-			name = UIToolBox;
 			path = UIToolBox;
 			sourceTree = "<group>";
 		};
@@ -847,7 +846,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -879,7 +878,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

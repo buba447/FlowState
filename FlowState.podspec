@@ -27,7 +27,7 @@ Get in that Flow State
   # s.social_media_url = 'https://twitter.com/thewithra'
 
   s.ios.deployment_target = '8.0'
-
+  s.swift_version = '4.2'
   s.source_files = 'FlowState/Classes/**/*'
 
 end
