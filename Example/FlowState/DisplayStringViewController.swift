@@ -19,7 +19,7 @@ enum DisplayStringAction {
 class DisplayStringViewController: UIViewController {
   
   /// Create a step results handler, with a defined content and result type.
-  let results = FlowStepResult(String.self, DisplayStringAction.self)
+  let results = FlowStepIntent(String.self, DisplayStringAction.self)
   
   let stringLabel = UILabel(font: UIFont.boldSystemFont(ofSize: 28), textColor: UIColor.white)
   

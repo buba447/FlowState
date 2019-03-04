@@ -13,7 +13,7 @@ import FlowState
 
 class StringEntryViewController: UIViewController {
 
-  let results = FlowStepResult(String.self, String.self)
+  let results = FlowStepIntent(String.self, String.self)
 
   let entryLabel = UITextField()
 

@@ -7,14 +7,29 @@
 
 import Foundation
 
-public class FlowStepResult<Content, Result> {
+/**
+ FlowStepIntent is the gate keeper and data source for a FlowStep.
+ 
+ Every active FlowStep holds a FlowStepIntent. When the FlowStep is active it
+ will not continue until the FlowStepIntent has been completed with `Result`.
+ 
+ Additionally a FlowStepIntent hold reference to the `Content` of a flow step.
+ When set the FlowStepIntent calls it's `contentUpdateHandler` with the new Content.
+ This gives a conveinent way to update the content of a step that has already passed.
+ 
+ **/
+public class FlowStepIntent<Content, Result> {
   
-  public var content: Content?
+  /// The backing Content of a FlowStep
+  public fileprivate(set) var content: Content?
   
+  /// A closure that is called when new content is set.
   public var contentUpdateHandler: ((Content?) -> Void)?
   
-  public init(_ content: Content.Type, _ results: Result.Type) { }
+  /// Initializes a FlowStepIntent with a Content type and a Result type
+  public init(_ contentType: Content.Type, _ resultType: Result.Type) { }
   
+  /// Called with the result of the FlowStep, if any. When called the parent FlowStep is completed.
   public func complete(_ stepResult: Result?) {
     result = stepResult
     /// Differ completion in the case that `Complete` is called before the step has returned.

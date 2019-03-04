@@ -31,7 +31,7 @@ class ExampleFlowCoordinator: NavigationFlowCoordinator {
       navigationController.present(loader, animated: true, completion: nil)
       
       /// Create step results for this step.
-      let stepResults = FlowStepResult(String.self, String.self)
+      let stepResults = FlowStepIntent(String.self, String.self)
       /// Fake an async network call
       DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
         /// After the 'download' has completed, call completion with the results.
@@ -55,7 +55,7 @@ class ExampleFlowCoordinator: NavigationFlowCoordinator {
     }
     
     /// Set the display step completion block to switch between its results
-    displayStep.setResult { (step, action) in
+    displayStep.setCompletion { (step, action) in
       guard let action = action else { return }
       switch action {
       case .editString:

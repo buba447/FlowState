@@ -8,20 +8,20 @@
 import Foundation
 import UIKit
 
+/// A NavigationFlowCoordinator is a convenience class that hosts a Navigation Flow with a UINavigationController
 open class NavigationFlowCoordinator: Startable {
   
   public var nextStep: Startable?
   
   public let identifier: String
 
+  public let navigationController: UINavigationController
+  
   public required init(navigationController: UINavigationController = UINavigationController(), identifier: String = "", firstStep: Startable) {
     self.navigationController = navigationController
     self.identifier = identifier
     self.firstStep = firstStep
   }
-  
-  // MARK: - Public
-  public let navigationController: UINavigationController
   
   public func start() {
     firstStep.start()

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		052BD336EB0E1172EA80DBFB2F7D90EA /* MathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5BEFBEAB9A7A53A5CEDD16AA71E97 /* MathKit.swift */; };
 		07863D518C964245F2CCB5E35B3B6F3E /* FlowState-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CC114B76097555233963055301BF57 /* FlowState-dummy.m */; };
-		16F732163C3DF24EBB7B9FD44D482032 /* FlowStepResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepResult.swift */; };
+		16F732163C3DF24EBB7B9FD44D482032 /* FlowStepIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepIntent.swift */; };
 		193ED44F09C20FC3EDDDE0036C4E8F91 /* Pods-FlowState_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD532200A52359A29755A0760AC2EDB9 /* Pods-FlowState_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2119CEB12C89C96132C9EBFE5DE527CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		2596B292272BB951C26FE57435E24BCD /* FlowState-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF2AAAD86FF1E98ACD8621A380B7507 /* FlowState-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -97,7 +97,7 @@
 		B26EBBBF72B355568CFD0BF7730FE0B7 /* FlowState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlowState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49B4664605DBA1232977AC74D1559C3 /* Pods-FlowState_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowState_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B525ADF7D9DEF64DAEE8CA7DE22CC711 /* Pods-FlowState_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowState_Tests-dummy.m"; sourceTree = "<group>"; };
-		B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowStepResult.swift; path = FlowState/Classes/FlowStepResult.swift; sourceTree = "<group>"; };
+		B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepIntent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowStepIntent.swift; path = FlowState/Classes/FlowStepIntent.swift; sourceTree = "<group>"; };
 		BDA5C36C7D58D148AC7AC96E77E1FAAA /* UITableView+Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Header.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UITableView+Header.swift"; sourceTree = "<group>"; };
 		C2F5D6CB34410CA2C45DE89AE71472F1 /* FlowState-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowState-prefix.pch"; sourceTree = "<group>"; };
 		C5A08ECC795FCCB67E7B550DF6C1528B /* UIView+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Shadow.swift"; path = "UIToolBox/Classes/Extensions/UIKit/UIView+Shadow.swift"; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 			children = (
 				02820711E9771F6E2067FDE547E0AB9B /* ConcurrentFlowStep.swift */,
 				6FCF1498BB9C409B417BD91756A6173A /* FlowStep.swift */,
-				B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepResult.swift */,
+				B57B49B792F9EF3F02A726C769C3FF4D /* FlowStepIntent.swift */,
 				D7DC63E37AAE4229395D729629DEA875 /* NavigationFlowCoordinator.swift */,
 				769301549E0E8675995F35595278C651 /* Startable.swift */,
 				431E57CCB6E4D2084E421BAB579B3D58 /* Pod */,
@@ -473,7 +473,7 @@
 				8A6E657F9841D9A1848BC5F6760F8536 /* ConcurrentFlowStep.swift in Sources */,
 				07863D518C964245F2CCB5E35B3B6F3E /* FlowState-dummy.m in Sources */,
 				EA7D7B5E52811A2CD79625C36170700A /* FlowStep.swift in Sources */,
-				16F732163C3DF24EBB7B9FD44D482032 /* FlowStepResult.swift in Sources */,
+				16F732163C3DF24EBB7B9FD44D482032 /* FlowStepIntent.swift in Sources */,
 				AC8BA0A3963894D3365A8EA997C5AC1F /* NavigationFlowCoordinator.swift in Sources */,
 				A799383AC38349330BBFF29A526009A7 /* Startable.swift in Sources */,
 			);
