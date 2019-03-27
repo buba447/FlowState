@@ -18,15 +18,15 @@ Flow Coordinators are the answer to this problem. A `Flow Coordinator` manages t
 across several pages in a flow. The ViewControllers are written to be as simple and clean as possible. Mainly a view controller will only display `Content` and collect `Result`.
 
 `FlowState` provides an easy to compose and easy to ready way to create view controlller flows in swift!
-The goal is to write a flow of view controllers and handle the comlex data piping in an easy way.
+The goal is to write a flow of view controllers and handle the complex data piping in an easy way.
 
 A `FlowState` coordinator is made up of a string of `FlowStep`. Each step manages a single part of a flow.
 When a `FlowStep` starts, the flow is paused until the step completes. Once compete, the next step begins.
 
 `FlowStep` makes managing the flow of information and content a breeze.
 
-A `FlowStep` is given a `FlowStepIntent`, which is usually owned by  a view controller.
-The  `FlowStepIntent` is how the step manages its content, and also tells the step when it has completed.
+A `FlowStep` is given a `FlowStepIntent`, which is usually owned by a view controller.
+The `FlowStepIntent` is how the step manages its content, and also tells the step when it has completed.
 
 ## Example
 
