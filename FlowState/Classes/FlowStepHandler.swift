@@ -8,17 +8,17 @@
 import Foundation
 
 /**
- FlowStepIntent is the gate keeper and data source for a FlowStep.
+ FlowStepHandler is the gate keeper and data source for a FlowStep.
  
- Every active FlowStep holds a FlowStepIntent. When the FlowStep is active it
- will not continue until the FlowStepIntent has been completed with `Result`.
+ Every active FlowStep holds a FlowStepHandler. When the FlowStep is active it
+ will not continue until the FlowStepHandler has been completed with `Result`.
  
- Additionally a FlowStepIntent hold reference to the `Content` of a flow step.
- When set the FlowStepIntent calls it's `contentUpdateHandler` with the new Content.
+ Additionally a FlowStepHandler hold reference to the `Content` of a flow step.
+ When set the FlowStepHandler calls it's `contentUpdateHandler` with the new Content.
  This gives a conveinent way to update the content of a step that has already passed.
  
  **/
-public class FlowStepIntent<Content, Result> {
+public class FlowStepHandler<Content, Result> {
   
   /// The backing Content of a FlowStep
   public fileprivate(set) var content: Content?
@@ -26,7 +26,7 @@ public class FlowStepIntent<Content, Result> {
   /// A closure that is called when new content is set.
   public var contentUpdateHandler: ((Content?) -> Void)?
   
-  /// Initializes a FlowStepIntent with a Content type and a Result type
+  /// Initializes a FlowStepHandler with a Content type and a Result type
   public init(_ contentType: Content.Type, _ resultType: Result.Type) { }
   
   /// Called with the result of the FlowStep, if any. When called the parent FlowStep is completed.

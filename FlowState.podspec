@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlowState'
-  s.version          = '1.0.1'
+  s.version          = '1.5.0'
   s.summary          = 'Make easy, composable ViewController Flow Coordinators with FlowState.'
 
   s.description      = <<-DESC

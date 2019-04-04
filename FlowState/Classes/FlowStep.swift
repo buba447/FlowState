@@ -9,20 +9,20 @@ import Foundation
 
 /**
  FlowStep represents a single step in a flow. The FlowStep is initialized with an
- intent block that returns a FlowStepIntent. Once started the flow does not progress
- until `complete()` is called on the FlowStepIntent.
+ intent block that returns a FlowStepHandler. Once started the flow does not progress
+ until `complete()` is called on the FlowStepHandler.
  
  A FlowStep has two generic properties, `Content` and `Results`.
  
  The `Content` should represent the content that the FlowStep displays. The Content is
- settable and will forward its information to the FlowStepIntent.
+ settable and will forward its information to the FlowStepHandler.
  
  The `Result` should represent the information that the FlowStep needs to collect
  in order to complete.
  
  A FlowStep has two closures, the Intent closure and the Completion closure.
  
- The Intent closure is called when the step begins and must return a FlowStepIntent.
+ The Intent closure is called when the step begins and must return a FlowStepHandler.
  
  The Completion closure is called once the step has completed, and can be used to
  retrieve the resulting information and to set the next step of the flow.
@@ -34,7 +34,7 @@ public class FlowStep<Content, Result>: Startable, FlowStepResultDelegate {
   /**
   The Content that backs the Flow Step.
    If the content is set while the FlowStep is active, it will forward the content
-   to the child FlowStepIntent
+   to the child FlowStepHandler
    **/
   public var content: Content? {
     didSet {
@@ -46,7 +46,7 @@ public class FlowStep<Content, Result>: Startable, FlowStepResultDelegate {
   
   public var identifier: String
   
-  public typealias IntentClosure = (FlowStep<Content, Result>) -> FlowStepIntent<Content, Result>?
+  public typealias IntentClosure = (FlowStep<Content, Result>) -> FlowStepHandler<Content, Result>?
   public typealias CompletionClosure = (FlowStep<Content, Result>, Result?) -> Void
   
   /// Initialize the FlowStep with a Content type, Result type, Identifier, and an Intent closure.
@@ -82,7 +82,7 @@ public class FlowStep<Content, Result>: Startable, FlowStepResultDelegate {
   
   fileprivate let intent: IntentClosure
   fileprivate var completion: CompletionClosure?
-  fileprivate weak var stepResult: FlowStepIntent<Content, Result>?
+  fileprivate weak var stepResult: FlowStepHandler<Content, Result>?
   
   fileprivate func contentDidUpdate() {
     stepResult?.setContent(content)
